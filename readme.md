@@ -48,3 +48,11 @@ const volt = new voltClient({
 ## Future
 
 - more examples
+
+## Contributing
+
+Run tests
+
+```bash
+npm run test
+```
