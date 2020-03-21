@@ -21,8 +21,18 @@ test('for getOrders() an order is returned', async () => {
 
 test('for getProducts() a product is returned', async () => {
     const data = await volt.getProducts();
+    console.log('pro')
     expect(data.items[0]).toHaveProperty('name');
     expect(data.items[0]).toHaveProperty('price');
+});
+test('for updateProduct() modify a product', async () => {
+    const testUpdateProductModel = require('./models/Product')
+    const data = await volt.updateProduct('59820c6f87f326039c004218',testUpdateProductModel);
+    
+    // todo: check for status response 200?
+
+    // expect(data.items[0]).toHaveProperty('name');
+    // expect(data.items[0]).toHaveProperty('price');
 });
 
 // Categories

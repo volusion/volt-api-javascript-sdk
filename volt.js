@@ -23,6 +23,9 @@ module.exports = class voltApi {
     getProducts = async function getProducts(options) {
         return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/products` + otq(options)})
     }
+    updateProduct = async function updateProduct(id, data, options) {
+        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/products/${id}` + otq(options), data: data})
+    }
 
     // Categories
 
@@ -58,7 +61,7 @@ module.exports = class voltApi {
                 },
                 url: baseUrl + r.url,
                 method: r.method,
-                data: r.body || null
+                data: r.data || null
             });
             return data;
         } catch (error) {
