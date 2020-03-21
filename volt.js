@@ -8,6 +8,8 @@ module.exports = class voltApi {
         this.config = config;
     }
 
+    // Orders
+
     getOrders = async function getOrders(options) {
         return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/orders` + otq(options)})
         // todo: make sure we support updatedAfter. Also need to handle paging or just return a boat load 🚢.
@@ -16,6 +18,37 @@ module.exports = class voltApi {
         return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}` + otq(options), data: data})
     }
 
+    // Products
+
+    getProducts = async function getProducts(options) {
+        return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/products` + otq(options)})
+    }
+
+    // Categories
+
+    getCategories = async function getCategories(options) {
+        return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/categorytree` + otq(options)})
+    }
+
+    // Shoppers
+
+    getShoppers = async function getShoppers(options) {
+        return await this.makeVoltApiRequest({method: "GET", url: `/admin/shoppers` + otq(options)})
+    }
+
+    // Store Information
+
+    getStoreInformation = async function getStoreInformation(options) {
+        return await this.makeVoltApiRequest({method: "GET", url: `/admin/storeinformation` + otq(options)})
+    }
+    
+    // Webhooks
+
+    getWebhooks = async function getWebhooks(options) {
+        return await this.makeVoltApiRequest({method: "GET", url: `/admin/webhooks` + otq(options)})
+    }
+
+    //*********************************************************
     makeVoltApiRequest = async function makeVoltApiRequest(r) {
         try {
             const { data } = await axios({
