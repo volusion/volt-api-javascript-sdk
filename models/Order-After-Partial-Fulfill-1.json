@@ -1,0 +1,367 @@
+{
+    "createdOn": "2020-03-23T04:25:30.036Z",
+    "updatedOn": "2020-03-23T05:23:34.953Z",
+    "placedBy": {
+        "firstName": "Kevin",
+        "lastName": "Sproles",
+        "emailAddress": "kevin.sproles+14618947@volusion.com",
+        "phoneNumber": "1231231234",
+        "address": {
+            "address1": "1835A Kramer Ln",
+            "address2": "",
+            "city": "Austin",
+            "state": "TX",
+            "postalCode": "78758",
+            "country": "US"
+        },
+        "emailOptIn": false
+    },
+    "cart": {
+        "createdOn": "2020-03-05T03:13:31.237Z",
+        "updatedOn": "2020-03-23T04:24:35.403Z",
+        "items": [
+            {
+                "product": {
+                    "categoryIds": [
+                        "597bb02187f3260b30719a27"
+                    ],
+                    "price": 9,
+                    "imageMetadata": {
+                        "imageLink": {
+                            "createdOn": "2017-07-28T21:35:43.983Z",
+                            "updatedOn": "2017-11-22T19:55:40.849Z",
+                            "revision": 1,
+                            "tags": [
+                                "product"
+                            ],
+                            "tenant": "5950afa21cf3d70015086106",
+                            "id": "597bae2f87f3260b30719a0b",
+                            "fullUri": "https://res.cloudinary.com/dyx4yhvoq/image/upload/v1501277732/5950afa21cf3d70015086106/jpyxda23d7o0q6hir7d8.jpg",
+                            "uriBase": "https://res.cloudinary.com/dyx4yhvoq/image/upload/",
+                            "imagePath": "v1501277732/5950afa21cf3d70015086106/jpyxda23d7o0q6hir7d8.jpg"
+                        },
+                        "title": "",
+                        "description": "",
+                        "altText": ""
+                    },
+                    "weight": 0,
+                    "variants": [],
+                    "productVariants": [
+                        {
+                            "id": "5a15d68c87f3260a6c1c63ee",
+                            "isShopperVisible": true,
+                            "variants": [],
+                            "isInventoryTracked": false,
+                            "quantity": 0,
+                            "imageLinkIds": [],
+                            "skuImageLinkIds": [],
+                            "fulfillmentData": {},
+                            "price": 9,
+                            "sku": "bamboo-tablet-stand"
+                        }
+                    ],
+                    "fulfillmentData": {},
+                    "name": "Bamboo Tablet Stand",
+                    "state": "Active",
+                    "seoFriendlyName": "tablet-stand",
+                    "sku": "bamboo-tablet-stand",
+                    "productVariantId": "5a15d68c87f3260a6c1c63ee",
+                    "isTaxable": true,
+                    "requiresShipping": true,
+                    "id": "5a15d68c87f3260a6c1c63ef",
+                    "pricing": {
+                        "listPrice": 9
+                    }
+                },
+                "quantity": 3
+            },
+            {
+                "product": {
+                    "categoryIds": [
+                        "597bb80a87f3260b30719a66"
+                    ],
+                    "price": 9,
+                    "imageMetadata": {
+                        "imageLink": {
+                            "createdOn": "2017-08-02T15:58:06.273Z",
+                            "updatedOn": "2017-08-02T15:58:06.273Z",
+                            "revision": 1,
+                            "tags": [],
+                            "tenant": "5950afa21cf3d70015086106",
+                            "id": "5981f68e87f326072c4eb784",
+                            "fullUri": "https://res.cloudinary.com/dyx4yhvoq/image/upload/v1501689502/5950afa21cf3d70015086106/se3ptfhdr6xq09bsot3u.jpg",
+                            "uriBase": "https://res.cloudinary.com/dyx4yhvoq/image/upload/",
+                            "imagePath": "v1501689502/5950afa21cf3d70015086106/se3ptfhdr6xq09bsot3u.jpg"
+                        },
+                        "title": "",
+                        "description": "",
+                        "altText": ""
+                    },
+                    "weight": 0,
+                    "variants": [],
+                    "productVariants": [
+                        {
+                            "id": "5965c1f187f32609c4372916",
+                            "isShopperVisible": true,
+                            "variants": [],
+                            "isInventoryTracked": false,
+                            "quantity": 0,
+                            "imageLinkIds": [],
+                            "skuImageLinkIds": [],
+                            "fulfillmentData": {},
+                            "price": 9,
+                            "sku": "plant-2"
+                        }
+                    ],
+                    "fulfillmentData": {},
+                    "name": "Artificial Mini Succulent - Ruby Red",
+                    "state": "Active",
+                    "seoFriendlyName": "artificial-mini-succulent-ruby-red",
+                    "sku": "plant-2",
+                    "productVariantId": "5965c1f187f32609c4372916",
+                    "isTaxable": true,
+                    "requiresShipping": true,
+                    "id": "5965c1f187f32609c4372917",
+                    "pricing": {
+                        "listPrice": 9
+                    }
+                },
+                "quantity": 3
+            }
+        ],
+        "totalItems": 6,
+        "totalWithoutReductions": 54,
+        "total": 51.3,
+        "taxRate": 0.0825,
+        "taxAmount": 5.06,
+        "isTaxExempt": false,
+        "grandTotal": 66.36,
+        "seo": null,
+        "revision": 8,
+        "messages": [],
+        "discount": {
+            "fixedPriceReduction": 0,
+            "percentagePriceReduction": 10,
+            "startDateTime": null,
+            "endDateTime": null,
+            "currentUsageCount": 0,
+            "totalUsageCount": 0,
+            "revision": 14,
+            "createdTime": "2020-03-23T04:25:25.269Z",
+            "updatedOn": "2019-08-22T20:51:43.175Z",
+            "scope": {
+                "items": [
+                    {
+                        "id": "597bb02187f3260b30719a27",
+                        "type": "category"
+                    }
+                ],
+                "entireStore": false
+            },
+            "status": {
+                "code": "live",
+                "desc": "This discount is live",
+                "text": "Live"
+            },
+            "criteria": {
+                "minimumPurchaseQuantity": 0,
+                "maximumPurchaseQuantity": null,
+                "requiresCouponCode": false,
+                "couponCode": null
+            },
+            "tenant": "5950afa21cf3d70015086106",
+            "name": "Summer Blowout",
+            "duration": "Unlimited",
+            "discountType": "percent",
+            "isActive": true,
+            "unlimited": true,
+            "unlimitedDuration": true,
+            "hasStartDateTime": false,
+            "hasEndDateTime": false,
+            "id": "5d518eca6145dc8401943a56"
+        },
+        "discountAmount": 2.7,
+        "discounts": [
+            {
+                "discount": {
+                    "fixedPriceReduction": 0,
+                    "percentagePriceReduction": 10,
+                    "startDateTime": null,
+                    "endDateTime": null,
+                    "currentUsageCount": 0,
+                    "totalUsageCount": 0,
+                    "revision": 14,
+                    "createdTime": "2020-03-23T04:25:25.269Z",
+                    "updatedOn": "2019-08-22T20:51:43.175Z",
+                    "scope": {
+                        "items": [
+                            {
+                                "id": "597bb02187f3260b30719a27",
+                                "type": "category"
+                            }
+                        ],
+                        "entireStore": false
+                    },
+                    "status": {
+                        "code": "live",
+                        "desc": "This discount is live",
+                        "text": "Live"
+                    },
+                    "criteria": {
+                        "minimumPurchaseQuantity": 0,
+                        "maximumPurchaseQuantity": null,
+                        "requiresCouponCode": false,
+                        "couponCode": null
+                    },
+                    "tenant": "5950afa21cf3d70015086106",
+                    "name": "Summer Blowout",
+                    "duration": "Unlimited",
+                    "discountType": "percent",
+                    "isActive": true,
+                    "unlimited": true,
+                    "unlimitedDuration": true,
+                    "hasStartDateTime": false,
+                    "hasEndDateTime": false,
+                    "id": "5d518eca6145dc8401943a56"
+                },
+                "discountAmount": 2.7
+            }
+        ],
+        "postalCode": "",
+        "state": "",
+        "country": "",
+        "checkoutUrl": "https://www.crafted.love/checkout/?bag=5e7839b9288fd59acf9901ec",
+        "id": "5e606e5b39a43b1b647b140c",
+        "shippingMethod": {
+            "id": "5950b01e87f326040465d85e",
+            "name": "US/Canada - Ground",
+            "shippingBand": {
+                "totalThreshold": 0,
+                "shippingPrice": 10
+            },
+            "shippingCost": 10
+        },
+        "customShippingMethod": null
+    },
+    "deliverTo": {
+        "firstName": "John",
+        "lastName": "Smith",
+        "phoneNumber": "",
+        "address": {
+            "address1": "1835A Kramer Ln",
+            "address2": "",
+            "city": "Austin",
+            "state": "TX",
+            "postalCode": "78758",
+            "country": "US"
+        },
+        "isResidential": true
+    },
+    "shipped": false,
+    "postagePaid": false,
+    "paid": true,
+    "isCanceled": false,
+    "isRefunded": false,
+    "trackingInformation": [
+        {
+            "carrier": "USPS",
+            "number": "6454559183745611689"
+        }
+    ],
+    "stripeEvents": [
+        {
+            "type": "PreAuthorizationSuccessful",
+            "timestamp": "2020-03-23T04:25:30.030Z",
+            "description": ""
+        },
+        {
+            "type": "CapturedChargeSuccessful",
+            "timestamp": "2020-03-23T04:28:25.464Z",
+            "description": ""
+        }
+    ],
+    "payPalEvents": [],
+    "paymentLifecycle": [
+        {
+            "createdOn": "2020-03-23T04:28:24.523Z",
+            "updatedOn": "0001-01-01T00:00:00.000Z",
+            "refundedFromOrder": false,
+            "id": "5e783ae8e7890b9460d00d0f",
+            "eventType": "charge",
+            "note": null,
+            "portals": null,
+            "chargeAmount": 66.36,
+            "refundAmount": null,
+            "stripeCreditCardToken": null,
+            "stripeChargeId": "ch_1GPhquEcJ9jYUgSEY45dpN4F",
+            "stripeRefundId": null,
+            "payPalPaymentTransactionId": null,
+            "payPalCaptureTransactionId": null,
+            "payPalRefundTransactionId": null,
+            "isAuthorizeNetInitiated": false,
+            "authorizeNetPaymentTransactionId": null,
+            "authorizeNetCaptureTransactionId": null,
+            "authorizeNetOpaqueDataDescriptor": null,
+            "authorizeNetOpaqueDataValue": null
+        }
+    ],
+    "fulfillmentLifecycle": [
+        {
+            "createdOn": "2020-03-23T05:23:34.932Z",
+            "updatedOn": "0001-01-01T00:00:00.000Z",
+            "eventType": "PartiallyFulfilled",
+            "note": null,
+            "trackingInformation": [
+                {
+                    "carrier": "USPS",
+                    "number": "6454559183745611689"
+                }
+            ],
+            "products": [
+                {
+                    "productVariantId": "5a15d68c87f3260a6c1c63ee",
+                    "name": "Bamboo Tablet Stand",
+                    "quantity": 1,
+                    "weight": 0,
+                    "id": "5a15d68c87f3260a6c1c63ef"
+                }
+            ],
+            "requiresNotification": true,
+            "sourceId": null,
+            "id": "5e7847d683c629e48bb4f9e5",
+            "shippingLabel": null
+        }
+    ],
+    "isImport": false,
+    "tenant": "5950afa21cf3d70015086106",
+    "requestId": "4d3ac93e40de4b17b3bd",
+    "paymentMethod": "Credit Card",
+    "creditCardType": "Visa",
+    "creditCardLastFour": "7427",
+    "orderNumber": "ED1D-F87A",
+    "customerId": "5e783a37ea5e5d868513aa53",
+    "auditLogId": "5e783a3aea5e5d8c3c13aa57",
+    "stripeChargeId": "ch_1GPhquEcJ9jYUgSEY45dpN4F",
+    "revision": 3,
+    "stripeRefunds": [],
+    "id": "5e783a3aea5e5d5d1f13aa58",
+    "taxRate": 0.0825,
+    "taxAmount": 5.06,
+    "grandTotal": 66.36,
+    "shippingCost": 10,
+    "authorizedAmount": 66.36,
+    "verification": {
+        "isFlaggedForReview": true,
+        "doShippingAndBillingMatch": true,
+        "isAddressLine1Verified": false,
+        "isPostalCodeVerified": false,
+        "isCardVerificationCodeVerified": true,
+        "gatewayCardVerification": {
+            "gatewayId": "stripe",
+            "addressLine1Check": "fail",
+            "addressZipCheck": "fail",
+            "cardVerificationCodeCheck": "pass"
+        }
+    },
+    "status": "In Progress"
+}

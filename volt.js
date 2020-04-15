@@ -10,21 +10,39 @@ module.exports = class voltApi {
 
     // Orders
 
+    addOrder = async function addOrder(data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders`, data: data})
+    }
     getOrders = async function getOrders(options) {
         return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/orders` + otq(options)})
         // todo: make sure we support updatedAfter. Also need to handle paging or just return a boat load 🚢.
     }
-    updateOrder = async function updateOrder(id, data, options) {
-        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}` + otq(options), data: data})
+    updateOrder = async function updateOrder(id, data) {
+        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/orders/${id}`, data: data})
+    }
+    addOrderPaymentLifecycleEvent = async function addOrderPaymentLifecycleEvent(id, data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}/paymentlifecycleevent`, data: data})
+    }
+    addOrderFulfillmentEvent = async function addOrderFulfillmentEvent(id, data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}/fulfillmentlifecycleevent`, data: data})
+    }
+    deleteOrder = async function deleteOrder(id) {
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/store/admin/orders/${id}`})
     }
 
     // Products
 
+    addProduct = async function addProduct(data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/products`, data: data})
+    }
     getProducts = async function getProducts(options) {
         return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/products` + otq(options)})
     }
-    updateProduct = async function updateProduct(id, data, options) {
-        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/products/${id}` + otq(options), data: data})
+    updateProduct = async function updateProduct(id, data) {
+        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/products/${id}`, data: data})
+    }
+    deleteProduct = async function deleteProduct(id) {
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/store/admin/products/${id}`})
     }
 
     // Categories
@@ -34,21 +52,40 @@ module.exports = class voltApi {
     }
 
     // Shoppers
+    // NOTE: This url doesn't currently match the admin /admin/shoppers url, but we plan to change all the urls to this short prefix anyways soon
 
+    addShopper = async function addShopper(data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/shoppers`, data: data})
+    }
     getShoppers = async function getShoppers(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/admin/shoppers` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/shoppers` + otq(options)})
+    }
+    updateShopper = async function updateShopper(id, data) {
+        return await this.makeVoltApiRequest({method: "PUT", url: `/shoppers/${id}`, data: data})
+    }
+    deleteShopper = async function deleteShopper(id) {
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/shoppers/${id}`})
     }
 
     // Store Information
 
     getStoreInformation = async function getStoreInformation(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/admin/storeinformation` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/storeinformation` + otq(options)})
     }
     
     // Webhooks
 
+    addWebhook = async function addWebhook(data) {
+        return await this.makeVoltApiRequest({method: "POST", url: `/webhooks`, data: data})
+    }
     getWebhooks = async function getWebhooks(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/admin/webhooks` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/webhooks` + otq(options)})
+    }
+    updateWebhook = async function updateWebhook(id, data) {
+        return await this.makeVoltApiRequest({method: "PUT", url: `/webhooks/${id}`, data: data})
+    }
+    deleteWebhook = async function deleteWebhook(id) {
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/webhooks/${id}`})
     }
 
     //*********************************************************

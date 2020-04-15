@@ -1,0 +1,31 @@
+{
+    "createdOn": "2020-03-23T05:35:04.990Z",
+    "updatedOn": "0001-01-01T00:00:00.000Z",
+    "eventType": "PartiallyFulfilled",
+    "note": null,
+    "trackingInformation": [
+        {
+            "carrier": "UPS",
+            "number": "AO36VGFWAI7YFU9C8SV"
+        }
+    ],
+    "products": [
+        {
+            "productVariantId": "5a15d68c87f3260a6c1c63ee",
+            "name": "Bamboo Tablet Stand",
+            "quantity": 1,
+            "weight": 0,
+            "id": "5a15d68c87f3260a6c1c63ef"
+        },
+        {
+            "productVariantId": "5965c1f187f32609c4372916",
+            "name": "Artificial Mini Succulent - Ruby Red",
+            "quantity": 3,
+            "weight": 0,
+            "id": "5965c1f187f32609c4372917"
+        }
+    ],
+    "requiresNotification": true,
+    "sourceId": null,
+    "id": "5e784a883a08343be274a637"
+}

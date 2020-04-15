@@ -2,7 +2,7 @@
 
 Easily integrate with the [Volt by Volusion](https://volusion.com/volt) API. This is the core ecommerce data of a store such as Products, Categories, Orders. See [Volt API Documentation](https://app.swaggerhub.com/apis-docs/volusion/VOLT). 
 
-If you're developing a theme, check out the [Element Docs](https://volusion.github.io/element/) instead.
+If you're developing a theme, check out the [Element Docs](https://www.volusion.com/resource-center/element) instead.
 
 ## Install
 
@@ -34,7 +34,8 @@ const order = data.items[0]; // for this sample, let's look at the first order i
 
 We recommend setting an environment variable in your project called `VOLT_API_KEY`.
 
-You probably already know how to do this using popular packages like [dotenv](https://www.npmjs.com/package/dotenv) or similar to manage environment variables. But if not, you can quickly set your environment variables locally by simply running the following command which sets the environment variable for the duration of your terminal session. So just run this before you run `npm start`.
+You probably already know how to do this using popular packages like [dotenv](https://www.npmjs.com/package/dotenv) or similar to manage environment variables. But if not, you can quickly set your environment variables locally by simply running the following command which sets the environment variable for the duration of your terminal session: `export VOLT_API_KEY="yourkeyhere"` 
+So just run that before you run `npm start` or similar. You can check the value of your environment variable in that specific terminal session by doing `echo "$VOLT_API_KEY"`.
 
 
 ```js
