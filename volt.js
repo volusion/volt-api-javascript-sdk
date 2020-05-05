@@ -11,44 +11,44 @@ module.exports = class voltApi {
     // Orders
 
     addOrder = async function addOrder(data) {
-        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders`, data: data})
+        return await this.makeVoltApiRequest({method: "POST", url: `/orders`, data: data})
     }
     getOrders = async function getOrders(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/orders` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/orders` + otq(options)})
         // todo: make sure we support updatedAfter. Also need to handle paging or just return a boat load 🚢.
     }
     updateOrder = async function updateOrder(id, data) {
-        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/orders/${id}`, data: data})
+        return await this.makeVoltApiRequest({method: "PUT", url: `/orders/${id}`, data: data})
     }
     addOrderPaymentLifecycleEvent = async function addOrderPaymentLifecycleEvent(id, data) {
-        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}/paymentlifecycleevent`, data: data})
+        return await this.makeVoltApiRequest({method: "POST", url: `/orders/${id}/paymentlifecycleevent`, data: data})
     }
     addOrderFulfillmentEvent = async function addOrderFulfillmentEvent(id, data) {
-        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/orders/${id}/fulfillmentlifecycleevent`, data: data})
+        return await this.makeVoltApiRequest({method: "POST", url: `/orders/${id}/fulfillmentlifecycleevent`, data: data})
     }
     deleteOrder = async function deleteOrder(id) {
-        return await this.makeVoltApiRequest({method: "DELETE", url: `/store/admin/orders/${id}`})
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/orders/${id}`})
     }
 
     // Products
 
     addProduct = async function addProduct(data) {
-        return await this.makeVoltApiRequest({method: "POST", url: `/store/admin/products`, data: data})
+        return await this.makeVoltApiRequest({method: "POST", url: `/products`, data: data})
     }
     getProducts = async function getProducts(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/products` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/products` + otq(options)})
     }
     updateProduct = async function updateProduct(id, data) {
-        return await this.makeVoltApiRequest({method: "PUT", url: `/store/admin/products/${id}`, data: data})
+        return await this.makeVoltApiRequest({method: "PUT", url: `/products/${id}`, data: data})
     }
     deleteProduct = async function deleteProduct(id) {
-        return await this.makeVoltApiRequest({method: "DELETE", url: `/store/admin/products/${id}`})
+        return await this.makeVoltApiRequest({method: "DELETE", url: `/products/${id}`})
     }
 
     // Categories
 
     getCategories = async function getCategories(options) {
-        return await this.makeVoltApiRequest({method: "GET", url: `/store/admin/categorytree` + otq(options)})
+        return await this.makeVoltApiRequest({method: "GET", url: `/categorytree` + otq(options)})
     }
 
     // Shoppers
