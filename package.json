@@ -1,6 +1,6 @@
 {
   "name": "@volusion/volt-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "node client for Volt by Volusion",
   "main": "volt.js",
   "scripts": {
